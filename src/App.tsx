@@ -18,6 +18,7 @@ import SoltRisk from "./components/ui/home/hsection/OPsoltrisk/SoltRisk";
 
 import Contact from "./components/ui/home/contactus/Form/Contact";
 import ContactForm from "./components/ui/home/contactus/Form/ContactForm";
+import PofessionalServices from "./components/ui/home/services/PofessionalServices/PofessionalServices";
 
 
 
@@ -42,6 +43,7 @@ const App: React.FC = () => {
           <Route path="/privacyregulation" element={<PrivacyRegulationsPage/>} />
           <Route path="/privacyass" element={<PrivacyASS/>} />
           <Route path="/cybersecurityass" element={<Cybersecurityassessment/>} />
+          <Route path="/professional" element={<PofessionalServices/>} />
           <Route path="/soltrisk" element={<SoltRisk/>}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact-form" element={<ContactForm />} />

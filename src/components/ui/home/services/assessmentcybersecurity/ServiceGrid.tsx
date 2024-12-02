@@ -23,7 +23,7 @@ const services = [
 const ServiceGrid: React.FC = () => {
   return (
     <section className="py-8">
-      <div className="max-w-5xl mx-auto bg-gray-100 p-2">
+      <div className="max-w-5xl mx-auto rounded-xl bg-gray-200 p-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-3">
           {services.map((service, index) => (
             <ServiceCard key={index} title={service.title} description={service.description} />

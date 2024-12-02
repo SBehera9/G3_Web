@@ -182,7 +182,7 @@ const Navbar: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      to="/services/professional"
+                      to="/professional"
                       className="block px-4 py-2 text-white hover:bg-teal-600"
                     >
                       Professional Services
