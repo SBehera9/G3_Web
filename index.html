@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const elements = document.querySelectorAll('.animate-slidein'); // Target elements you want to animate
+    
+        elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementBottom = element.getBoundingClientRect().bottom;
+          const windowHeight = window.innerHeight;
+    
+          if (elementTop < windowHeight && elementBottom >= 0) {
+            if (!element.classList.contains('slid-in')) {
+              element.classList.add('slidein');
+              element.classList.add('slid-in'); // Prevents the animation from happening again
+            }
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>
