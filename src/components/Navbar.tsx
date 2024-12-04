@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="bg-[#0d4848] py-4 fixed top-0 w-full z-50 shadow-lg">
+    <header className="bg-[#319393] py-4 fixed top-0 w-full z-50 shadow-lg">
       <div className="flex items-center justify-between xl:max-w-7xl xl:mx-auto max-w-full px-[6%]">
         <Link to="/">
           <img
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
               className="relative"
             >
               <Link
-                to=""
+                to="//"
                 className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-teal-100 hover:uppercase"
               >
                 About
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
               className="relative"
             >
               <Link
-                to=""
+                to="//"
                 className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-teal-100 hover:uppercase"
               >
                 Services
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
                     className="relative"
                   >
                     <Link
-                      to=""
+                      to="//"
                       className="block px-4 py-2 text-white hover:bg-teal-600"
                     >
                       Consulting Services
@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
                           className="relative"
                         >
                           <Link
-                            to=""
+                            to="//"
                             className="block px-4 py-2 text-white hover:bg-teal-600"
                           >
                             Data Privacy
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
                     className="relative"
                   >
                     <Link
-                      to=""
+                      to="//"
                       className="block px-4 py-2 text-white hover:bg-teal-600"
                     >
                       Assessment
@@ -198,7 +198,7 @@ const Navbar: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      to="/services/security-privacy"
+                      to="/security-privacy"
                       className="block px-4 py-2 text-white hover:bg-teal-600"
                     >
                       Security & Privacy Standards
@@ -215,7 +215,7 @@ const Navbar: React.FC = () => {
               className="relative"
             >
               <Link
-                to=""
+                to="//"
                 className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-teal-100 hover:uppercase"
               >
                 Our Products

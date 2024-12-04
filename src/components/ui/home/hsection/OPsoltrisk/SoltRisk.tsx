@@ -43,6 +43,14 @@ const SoltRisk: React.FC = () => {
               ))}
             </div>
           </div>
+          <div className="flex justify-center items-center mt-10">
+          <button
+              type="button"
+              onClick={() => window.open('https://soltrisk-io-e6evgfagahejbwgh.centralindia-01.azurewebsites.net/', '_blank')}
+              className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 focus:outline-none focus:ring focus:ring-teal-300 mt-2">
+              Visit Our Website
+            </button>
+          </div>
         </section>
       </main>
       <Footer/>

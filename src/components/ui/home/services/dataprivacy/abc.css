@@ -1,0 +1,21 @@
+/* Enable 3D transforms for the flip effect */
+.perspective {
+  perspective: 1200px; /* Controls depth of the 3D effect */
+}
+
+.transform-style-preserve {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden; /* Hide back side when not facing forward */
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg); /* Initially rotate the back side */
+}
+
+/* Animation for flipping effect on hover */
+.group:hover .transform-style-preserve {
+  transform: rotateY(180deg); /* Flip to show the back */
+}

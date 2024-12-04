@@ -15,7 +15,7 @@ const Career: React.FC = () => {
       <main className="max-w-4xl mx-auto px-6 py-12">
         {/* Why Join Us */}
         <section>
-          <h2 className="text-2xl font-bold text-teal-800 mb-6">Why Join Us?</h2>
+          <h2 className="text-2xl font-bold text-teal-800 mb-6 animate-slidein">Why Join Us?</h2>
           <ul className="space-y-6">
             <li className="bg-white shadow-md p-6 border-l-4 border-teal-800">
               <strong>Dynamic and Collaborative Culture:</strong> Thrive in an

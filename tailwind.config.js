@@ -16,6 +16,25 @@ export default {
       },
     },
   },
+  theme: {
+    extend: {
+      perspective: {
+        1000: "1000px",
+      },
+      rotate: {
+        'y-180': '180deg',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      transform: ["group-hover"],
+      rotate: ["group-hover"],
+    },
+  },
+  
+
+  
   plugins: [
     // If you plan to use any Tailwind plugins in the future
   ],

@@ -14,11 +14,14 @@ import PrivacyRegulationsPage from "./components/ui/home/services/PrivacyRegulat
 import PrivacyASS from "./components/ui/home/services/AssessmentsPrivacy/DataPrivacyPage";
 import Cybersecurityassessment from "./components/ui/home/services/assessmentcybersecurity/Cybersecurityassessment";
 
+import MainPage from "./components/ui/home/services/securityPrivacy/MainPage";
+
 import SoltRisk from "./components/ui/home/hsection/OPsoltrisk/SoltRisk";
 
 import Contact from "./components/ui/home/contactus/Form/Contact";
 import ContactForm from "./components/ui/home/contactus/Form/ContactForm";
 import PofessionalServices from "./components/ui/home/services/PofessionalServices/PofessionalServices";
+
 
 
 
@@ -44,6 +47,7 @@ const App: React.FC = () => {
           <Route path="/privacyass" element={<PrivacyASS/>} />
           <Route path="/cybersecurityass" element={<Cybersecurityassessment/>} />
           <Route path="/professional" element={<PofessionalServices/>} />
+          <Route path="/security-privacy" element={<MainPage/>} />
           <Route path="/soltrisk" element={<SoltRisk/>}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact-form" element={<ContactForm />} />

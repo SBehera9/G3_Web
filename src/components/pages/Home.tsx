@@ -4,7 +4,7 @@ import About from "../ui/home/AboutUs/About";
 import Services from "../ui/home/services/Services";
 import CompliancePage from "../ui/home/Compliance/ComplianceCard";
 import HeroSection from "../ui/home/hsection/HeroSection";
-import Contact from "../ui/home/contactus/Contact";
+// import Contact from "../ui/home/contactus/Contact";
 import Footer from "../Footer";
 
 
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
       <Services />
       <CompliancePage />
       <HeroSection />
-      <Contact />
+      {/* <Contact /> */}
       {/* <Drop/> */}
       <Footer/>
       
