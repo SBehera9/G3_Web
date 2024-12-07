@@ -6,10 +6,10 @@ import Img2 from "../../../../../assets/Image/img10.jpg";
 
 const ESL: React.FC = () => {
   return (
-    <div className="container mx-auto px-64 py-10">
+    <div className="container mx-auto px-4 md:px-64 py-6 md:py-10">
       <header className="text-left mb-8">
-        <p className="text-green-600 font-semibold">EXPERT SECURITY LEADERSHIP</p>
-        <h1 className="text-2xl font-bold mt-2">Tailored vCISO & vDPO solutions</h1>
+        <p className="text-green-600 font-semibold text-lg md:text-xl">EXPERT SECURITY LEADERSHIP</p>
+        <h1 className="text-2xl md:text-3xl font-bold mt-2">Tailored vCISO & vDPO solutions</h1>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">

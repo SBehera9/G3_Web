@@ -5,17 +5,19 @@ import ESL from "./ESL";
 import KfGrid from "./KfGrid";
 
 import ContactForm from "../../contactus/Form/ContactForm";
+import Footer from "../../../../Footer";
 
 
 const PofessionalServices : React.FC = () => {
   return (
-    <div className="font-sans text-gray-800 mt-24">
+    <div className="font-sans text-gray-800">
      <PsHeader/>
      <ExpertSl/>
      <ESL/>
      <KfGrid/>
      <div className="w-full border-2 border-teal-950"></div>
      <ContactForm/>
+     <Footer />
      
     </div>
   );

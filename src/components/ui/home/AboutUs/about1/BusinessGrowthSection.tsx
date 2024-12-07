@@ -2,32 +2,42 @@ import React from "react";
 
 const BusinessGrowthSection: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-12 bg-gray-100 rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold text-teal-800 mb-6">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gray-100 rounded-lg shadow-md">
+      <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-teal-800 mb-6">
         Vision
       </h1>
-      <h2 className="text-2xl font-bold text-teal-800 mb-6">
+      <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-teal-800 mb-6">
         Driving Business Growth Through Technology and Compliance
       </h2>
-      <p className="mb-4">
+      <p className="mb-4 text-sm sm:text-base lg:text-lg">
         At G3 Cyberspace, we understand the challenges businesses face in managing data privacy, strengthening cybersecurity, and ensuring compliance with evolving regulations. Navigating these complexities can be overwhelming, even for organizations with dedicated teams.
       </p>
-      <p className="mb-4">
+      <p className="mb-4 text-sm sm:text-base lg:text-lg">
         Our expertise and technology-driven solutions simplify these processes, empowering your business to:
       </p>
       <ul className="space-y-4">
-        <li className="bg-white shadow-sm p-4 border-l-4 border-teal-800">
-          <strong>Protect sensitive data:</strong> Advanced cybersecurity measures safeguard your information.
+        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-teal-800 overflow-hidden">
+          <span className="absolute inset-0 bg-teal-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
+          <span className="relative z-10 text-teal-800 group-hover:text-white transition-colors duration-500">
+            <strong>Protect sensitive data:</strong> Advanced cybersecurity measures safeguard your information.
+          </span>
         </li>
-        <li className="bg-white shadow-sm p-4 border-l-4 border-teal-800">
-          <strong>Stay compliant:</strong> Ensure adherence to industry regulations and global standards.
+        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-teal-800 overflow-hidden">
+          <span className="absolute inset-0 bg-teal-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
+          <span className="relative z-10 text-teal-800 group-hover:text-white transition-colors duration-500">
+            <strong>Stay compliant:</strong> Ensure adherence to industry regulations and global standards.
+          </span>
         </li>
-        <li className="bg-white shadow-sm p-4 border-l-4 border-teal-800">
-          <strong>Reduce operational risks:</strong> Enhance trust with stakeholders and improve resilience.
+        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-teal-800 overflow-hidden">
+          <span className="absolute inset-0 bg-teal-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
+          <span className="relative z-10 text-teal-800 group-hover:text-white transition-colors duration-500">
+            <strong>Reduce operational risks:</strong> Enhance trust with stakeholders and improve resilience.
+          </span>
         </li>
       </ul>
-      <br/>
-      <p className="mb-4">
+
+      <br />
+      <p className="mb-4 text-sm sm:text-base lg:text-lg">
         Partner with us to unlock growth opportunities by building a resilient, secure, and compliant organization ready to thrive in the digital age.
       </p>
     </section>

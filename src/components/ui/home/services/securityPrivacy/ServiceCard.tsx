@@ -47,20 +47,20 @@ const services: Service[] = [
 const FrameworkServices: React.FC = () => {
   return (
     <section className="bg-gray-50 py-16">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-sm text-green-600 font-semibold uppercase mb-8">
+        <h2 className="text-base sm:text-lg lg:text-xl text-green-600 font-semibold uppercase mb-8 text-center">
           Our Framework Implementation Services
         </h2>
         {/* Service List */}
-        <div className="space-y-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex items-center bg-white shadow-lg rounded-lg p-6"
+              className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6"
             >
               {/* Image */}
-              <div className="flex-shrink-0 w-24 h-24">
+              <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24">
                 <img
                   src={service.imageUrl}
                   alt={service.title}
@@ -68,16 +68,16 @@ const FrameworkServices: React.FC = () => {
                 />
               </div>
               {/* Content */}
-              <div className="ml-6">
-                <h3 className="text-lg font-bold text-gray-800">
+              <div className="mt-4 text-center">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-800">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-600">
+                <p className="mt-2 text-xs sm:text-sm md:text-base text-gray-600">
                   {service.description}
                 </p>
-                <button className="mt-4 px-5 py-2 text-sm font-medium text-white bg-green-600 rounded hover:bg-green-700">
+                {/* <button className="mt-4 px-4 py-2 text-xs sm:text-sm md:text-base font-medium text-white bg-teal-900 rounded hover:bg-green-700">
                   Read More
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
@@ -86,5 +86,6 @@ const FrameworkServices: React.FC = () => {
     </section>
   );
 };
+
 
 export default FrameworkServices;

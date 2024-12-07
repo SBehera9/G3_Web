@@ -8,7 +8,6 @@ import img4 from "../../../../../assets/Image/images3.jpg";
 import img5 from "../../../../../assets/Image/images4.jpg";
 import img6 from "../../../../../assets/Image/images5.jpg";
 
-
 const features = [
   {
     imageSrc: img1,
@@ -50,9 +49,11 @@ const features = [
 
 const KfGrid: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto px-40 py-10">
-      <h2 className="text-2xl font-bold mb-6">Key features of our services</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 py-10">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center sm:text-left">
+        Key Features of Our Services
+      </h2>
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature, index) => (
           <KeyFeatures
             key={index}

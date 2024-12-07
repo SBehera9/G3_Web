@@ -3,12 +3,14 @@ import Img from '../../../../assets/Image/img1.jpg';
 
 const About: React.FC = () => {
   return (
-    <div className="flex justify-center items-center w-full">
-      <div className="grid md:grid-cols-2 w-10/12 gap-8 text-teal-800 py-32">
+    <div className="flex justify-center items-center w-full bg-gray-100">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 w-11/12 lg:w-10/12 gap-8 text-teal-800 py-16 md:py-24">
         {/* About Us Section */}
-        <div className="border-[#80a4a4]  border-2 bg-[white] rounded-lg shadow-[5px_5px_5px_#80a4a4] p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-center justify-center animate-slidein">
-          <h2 className="text-5xl font-semibold mb-6 text-center">About Us</h2>
-          <p className="text-lg leading-relaxed text-center animate-slidein">
+        <div className="border-[#80a4a4] border-2 bg-[white] rounded-lg shadow-md p-6 sm:p-8 transform transition duration-300 hover:scale-105 hover:shadow-lg flex flex-col items-center justify-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 sm:mb-6 text-center">
+            About Us
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center">
             At G3 Cyberspace, we specialize in empowering businesses with comprehensive solutions in cybersecurity, data privacy, and regulatory compliance.
             With our expertise spanning consulting, assessments, and professional services, we help organizations confidently navigate the complex landscape of
             digital security and compliance standards.
@@ -17,7 +19,11 @@ const About: React.FC = () => {
 
         {/* Image Section */}
         <div className="flex justify-center items-center">
-          <img src={Img} alt="About Us" className="w-full rounded-lg shadow-lg animate-slidein" />
+          <img
+            src={Img}
+            alt="About Us"
+            className="w-full sm:w-3/4 md:w-full lg:w-10/12 rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </div>

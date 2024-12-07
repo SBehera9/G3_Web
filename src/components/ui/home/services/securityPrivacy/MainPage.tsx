@@ -2,6 +2,7 @@ import React from "react";
 import FrameworkPage from "./FrameworkPage";
 import ExpertiseSection from "./ExpertiseSection";
 import FrameworkServices from "./ServiceCard";
+import Footer from "../../../../Footer";
 
 
 const MainPage: React.FC = () => {
@@ -10,6 +11,7 @@ const MainPage: React.FC = () => {
       <FrameworkPage/>
       <ExpertiseSection/>
       <FrameworkServices/>
+      <Footer />
     </div>
   );
 };

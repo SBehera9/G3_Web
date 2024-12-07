@@ -12,13 +12,13 @@ const KeyFeatures: React.FC<FeatureCardProps> = ({ imageSrc, title, description 
       <img
         src={imageSrc}
         alt={title}
-        className="h-48 w-full object-cover"
+        className="h-48 w-full object-cover sm:h-60 md:h-72 lg:h-80"
       />
       <div className="p-4">
-        <h3 className="font-bold text-teal-900 group-hover:text-teal-500 text-lg mb-2">
+        <h3 className="font-bold text-teal-900 group-hover:text-teal-500 text-lg sm:text-xl md:text-2xl mb-2">
           {title}
         </h3>
-        <p className="text-sm text-gray-600 ">
+        <p className="text-sm sm:text-base text-gray-600">
           {description}
         </p>
       </div>

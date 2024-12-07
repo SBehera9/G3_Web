@@ -1,133 +1,96 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Logo from "../assets/Image/img4.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import icons
+import logo from '../assets/Image/4.png';
 
 const Footer: React.FC = () => {
   return (
-    <div>
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 p-6 px-20 py-11 bg-teal-900">
-          <div className="">
-            <Link to="/">
-              <img
-                src={Logo}
-                alt="Logo"
-                className="h-16 w-60 transform transition duration-300 hover:scale-105"
-              />
-            </Link>
-            <div className="text-teal-50 text-2xl font-bold">Follow Us</div>
+    <footer className="bg-teal-700 text-white py-12">
+      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        {/* Left Section: Logo and Social Media Links */}
+        <div className="md:col-span-1">
+          <img
+            src={logo}
+            alt="Company Logo"
+            className="w-32 h-auto mb-4"
+          />
+          <p className="font-semibold">Follow Us</p>
+          <div className="flex space-x-4 mt-4">
+            {/* Social media icons */}
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              <FaFacebook size={24} />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              <FaTwitter size={24} />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              <FaLinkedin size={24} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              <FaInstagram size={24} />
+            </a>
           </div>
-         <div className="text-teal-50 text-2xl font-bold text-left lg:text-center">Know More
-          <h1><Link to="/"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Home
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Startup Solutions
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Blog
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold  hover:text-teal-200"
-           >
-             Contact Us
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Privacy Policy
-           </Link></h1>
-         </div>
-         <div className="text-teal-50 text-2xl font-bold text-left lg:text-center">Automations
-         <h1><Link to="/"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Framework
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             TPRM
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Data Privacy
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Customer Centric Compliance (c3)
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             Statutory Compliance
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-            Risk Management
-           </Link></h1>
-         </div>
-         <div className="text-teal-50 text-2xl font-bold text-left lg:text-center">Frameworks
-         <h1><Link to="/"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             ISO 27001
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             ISO 27701
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             SOC 2
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             HIPAA
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             PCI-DSS
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             GDPR
-           </Link></h1>
-           <h1><Link to="//"
-             className="text-teal-50 text-xl font-semibold hover:text-teal-200"
-           >
-             ISO 42001
-           </Link></h1>
-         </div>
-         <div className="text-teal-50 text-2xl font-bold text-left lg:text-left">Reach Us
-            <h1 className="font-semibold text-xl ">
-              Address
-              <p className="text-[17px]">Millenia Business Park, Phase two, Campus 3A, 2nd Floor, Dr M.G.R Main Road, Kandhanchavadi, Perungudi, 600096</p>
-            </h1>
-            <h1 className="font-semibold text-xl">
-              Email us
-              <p className="text-[17px]">sales@soltrisk-io</p>
-            </h1>
-         </div>
+        </div>
+
+        {/* Center Section: 'Know More' Links */}
+        <div className="md:col-span-1">
+          <h3 className="font-bold text-xl mb-4">Know More</h3>
+          <ul className="space-y-2">
+            <li><Link to="/" className="hover:text-gray-300">Home</Link></li>
+            <li><Link to="/startup-solutions" className="hover:text-gray-300">Startup Solutions</Link></li>
+            <li><Link to="/blog" className="hover:text-gray-300">Blog</Link></li>
+            <li><Link to="/contact-us" className="hover:text-gray-300">Contact Us</Link></li>
+            <li><Link to="/privacy-policy" className="hover:text-gray-300">Privacy Policy</Link></li>
+          </ul>
+        </div>
+
+        {/* Right Section: 'Automations' Links */}
+        <div className="md:col-span-1">
+          <h3 className="font-bold text-xl mb-4">Automations</h3>
+          <ul className="space-y-2">
+            <li><Link to="/framework" className="hover:text-gray-300">Framework</Link></li>
+            <li><Link to="/tprm" className="hover:text-gray-300">TPRM</Link></li>
+            <li><Link to="/data-privacy" className="hover:text-gray-300">Data Privacy</Link></li>
+            <li><Link to="/customer-centric" className="hover:text-gray-300">Customer Centric</Link></li>
+            <li><Link to="/compliance-c3" className="hover:text-gray-300">Compliance (c3)</Link></li>
+            <li><Link to="/statutory-compliance" className="hover:text-gray-300">Statutory Compliance</Link></li>
+            <li><Link to="/risk-management" className="hover:text-gray-300">Risk Management</Link></li>
+          </ul>
+        </div>
+
+        {/* Bottom Section: 'Frameworks' Links */}
+        <div className="md:col-span-1">
+          <h3 className="font-bold text-xl mb-4">Frameworks</h3>
+          <ul className="space-y-2">
+            <li><Link to="/iso-27001" className="hover:text-gray-300">ISO 27001</Link></li>
+            <li><Link to="/iso-27701" className="hover:text-gray-300">ISO 27701</Link></li>
+            <li><Link to="/soc-2" className="hover:text-gray-300">SOC 2</Link></li>
+            <li><Link to="/hipaa" className="hover:text-gray-300">HIPAA</Link></li>
+            <li><Link to="/pci-dss" className="hover:text-gray-300">PCI-DSS</Link></li>
+            <li><Link to="/gdpr" className="hover:text-gray-300">GDPR</Link></li>
+            <li><Link to="/iso-42001" className="hover:text-gray-300">ISO 42001</Link></li>
+          </ul>
+        </div>
+
+        {/* Reach Us Section */}
+        <div className="md:col-span-1">
+          <h3 className="font-bold text-xl mb-4">Reach Us</h3>
+          <h4 className="font-semibold text-lg mb-2">Our Address</h4>
+          <address className="not-italic mb-4">
+            Millenia Business Park, Phase two, Campus 3A,<br />
+            2nd Floor, Dr M.G.R Main Road, Kandhanchavadi,<br />
+            Perungudi, 600096
+          </address>
+          <p>Email us: <a href="mailto:sales@soltrisk-io" className="hover:text-gray-300">sales@soltrisk-io</a></p>
+        </div>
+
       </div>
 
-      <footer className="bg-gray-800 text-white text-center py-4">
-        <p>&copy; 2024 G3 Cyberspace. All Rights Reserved.</p>
-      </footer>
-    </div>
+      {/* Footer Bottom Section */}
+      <div className="border-t border-gray-700 mt-8 pt-4">
+        <p className="text-center">&copy; 2024 CYBER SPACE. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 

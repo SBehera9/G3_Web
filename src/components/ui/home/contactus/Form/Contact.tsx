@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <div className="bg-blue-950 min-h-screen flex flex-col items-center justify-center">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl w-full">
         <h1 className="text-3xl font-bold text-center text-teal-600 mb-6">Contact Us</h1>
 

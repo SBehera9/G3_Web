@@ -8,13 +8,12 @@ import img9 from "../../../../assets/Image/img9.jpg";
 // ComplianceCard Component
 const ComplianceCard: React.FC<{ title: string; image: string }> = ({ title, image }) => {
   return (
-    <div className="w-48 h-48 border-[#80a4a4] border-2 bg-[white] rounded-lg shadow-[5px_5px_5px_#80a4a4] p-4 transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center flex flex-col items-center justify-center animate-slidein">
+    <div className="w-full sm:w-48 h-48 border-[#80a4a4] border-2 bg-white rounded-lg shadow-[5px_5px_5px_#80a4a4] p-4 transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center flex flex-col items-center justify-center animate-slidein">
       <img src={image} alt={title} className="w-24 h-24 object-contain mb-4 animate-slidein"/>
       <h3 className="text-lg font-semibold text-teal-800 animate-slidein">{title}</h3>
     </div>
   );
 };
-
 
 // Main Component
 const CompliancePage: React.FC = () => {
@@ -28,10 +27,10 @@ const CompliancePage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <div className="px-6 py-12">
-        <h1 className="text-7xl font-bold text-teal-800 text-center mb-16">Compliance Services</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 w-full place-items-center">
+    <div className="min-h-screen flex justify-center items-center px-4 sm:px-6 lg:px-8">
+      <div className="py-12">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-teal-800 text-center mb-8 sm:mb-12 md:mb-16">Compliance Services</h1>
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-20 w-full place-items-center">
           {complianceData.map((item) => (
             <ComplianceCard key={item.title} title={item.title} image={item.image} />
           ))}

@@ -29,8 +29,8 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 mt-12">
-      <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl w-full">
+    <div className="flex items-center justify-center min-h-screen bg-blue-950">
+      <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl w-full mt-12">
         <h1 className="text-3xl font-bold text-center text-teal-600 mb-6">Send Us a Message</h1>
         <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
           {/* Name Field */}
