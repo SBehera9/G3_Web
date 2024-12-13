@@ -22,7 +22,7 @@ const Career: React.FC = () => {
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Why Join Us */}
         <section>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-teal-800 mb-6 animate-slidein">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-teal-800 animate-slidein">
             Why Join Us?
           </h2>
           <ul className="space-y-6">

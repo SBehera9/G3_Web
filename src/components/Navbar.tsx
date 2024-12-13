@@ -210,7 +210,7 @@ const Navbar: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      to="//"
+                      to="/vapt"
                       className="block px-4 py-2 text-teal-950 hover:text-white bg-transparent hover:bg-teal-800 border-l-4 border-transparent hover:border-teal-400"
                     >
                       VAPT

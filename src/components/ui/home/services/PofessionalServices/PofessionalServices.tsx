@@ -10,7 +10,7 @@ import Footer from "../../../../Footer";
 
 const PofessionalServices : React.FC = () => {
   return (
-    <div className="font-sans text-gray-800">
+    <div className="font-sans ">
      <PsHeader/>
      <ExpertSl/>
      <ESL/>

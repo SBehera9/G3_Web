@@ -37,9 +37,9 @@ const Footer: React.FC = () => {
           <h3 className="font-bold text-xl mb-4">Know More</h3>
           <ul className="space-y-2">
             <li><Link to="/" className="hover:text-gray-300">Home</Link></li>
-            <li><Link to="/startup-solutions" className="hover:text-gray-300">Startup Solutions</Link></li>
-            <li><Link to="/blog" className="hover:text-gray-300">Blog</Link></li>
-            <li><Link to="/contact-us" className="hover:text-gray-300">Contact Us</Link></li>
+            <li><Link to="//" className="hover:text-gray-300">Startup Solutions</Link></li>
+            <li><Link to="//" className="hover:text-gray-300">Blog</Link></li>
+            <li><Link to="/contact" className="hover:text-gray-300">Contact Us</Link></li>
             <li><Link to="/privacy-policy" className="hover:text-gray-300">Privacy Policy</Link></li>
           </ul>
         </div>
@@ -48,13 +48,13 @@ const Footer: React.FC = () => {
         <div className="md:col-span-1">
           <h3 className="font-bold text-xl mb-4">Automations</h3>
           <ul className="space-y-2">
-            <li><Link to="/framework" className="hover:text-gray-300">Framework</Link></li>
-            <li><Link to="/tprm" className="hover:text-gray-300">TPRM</Link></li>
-            <li><Link to="/data-privacy" className="hover:text-gray-300">Data Privacy</Link></li>
-            <li><Link to="/customer-centric" className="hover:text-gray-300">Customer Centric</Link></li>
-            <li><Link to="/compliance-c3" className="hover:text-gray-300">Compliance (c3)</Link></li>
-            <li><Link to="/statutory-compliance" className="hover:text-gray-300">Statutory Compliance</Link></li>
-            <li><Link to="/risk-management" className="hover:text-gray-300">Risk Management</Link></li>
+            <li><Link to="/implementation" className="hover:text-gray-300">Framework</Link></li>
+            <li><Link to="//" className="hover:text-gray-300">TPRM</Link></li>
+            <li><Link to="/privacyregulation" className="hover:text-gray-300">Data Privacy</Link></li>
+            <li><Link to="//" className="hover:text-gray-300">Customer Centric</Link></li>
+            <li><Link to="//" className="hover:text-gray-300">Compliance (c3)</Link></li>
+            <li><Link to="//" className="hover:text-gray-300">Statutory Compliance</Link></li>
+            <li><Link to="//" className="hover:text-gray-300">Risk Management</Link></li>
           </ul>
         </div>
 
@@ -62,13 +62,13 @@ const Footer: React.FC = () => {
         <div className="md:col-span-1">
           <h3 className="font-bold text-xl mb-4">Frameworks</h3>
           <ul className="space-y-2">
-            <li><Link to="/iso-27001" className="hover:text-gray-300">ISO 27001</Link></li>
-            <li><Link to="/iso-27701" className="hover:text-gray-300">ISO 27701</Link></li>
-            <li><Link to="/soc-2" className="hover:text-gray-300">SOC 2</Link></li>
-            <li><Link to="/hipaa" className="hover:text-gray-300">HIPAA</Link></li>
-            <li><Link to="/pci-dss" className="hover:text-gray-300">PCI-DSS</Link></li>
-            <li><Link to="/gdpr" className="hover:text-gray-300">GDPR</Link></li>
-            <li><Link to="/iso-42001" className="hover:text-gray-300">ISO 42001</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-gray-300">ISO 27001</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-gray-300">ISO 27701</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-gray-300">SOC 2</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-gray-300">HIPAA</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-gray-300">PCI-DSS</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-gray-300">GDPR</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-gray-300">ISO 42001</Link></li>
           </ul>
         </div>
 

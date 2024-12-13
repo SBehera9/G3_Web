@@ -1,12 +1,12 @@
 import React from "react";
 import KeyFeatures from "./KeyFeatures";
 
-import img1 from "../../../../../assets/Image/images.jpg";
-import img2 from "../../../../../assets/Image/images1.jpg";
-import img3 from "../../../../../assets/Image/images2.jpg";
-import img4 from "../../../../../assets/Image/images3.jpg";
-import img5 from "../../../../../assets/Image/images4.jpg";
-import img6 from "../../../../../assets/Image/images5.jpg";
+import img1 from "../../../../../assets/Image/im3.jpg";
+import img2 from "../../../../../assets/Image/im4.jpg";
+import img3 from "../../../../../assets/Image/im5.jpg";
+import img4 from "../../../../../assets/Image/im6.jpg";
+import img5 from "../../../../../assets/Image/im7.jpg";
+import img6 from "../../../../../assets/Image/im8.jpg";
 
 const features = [
   {
@@ -50,7 +50,7 @@ const features = [
 const KfGrid: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 py-10">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center sm:text-left">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center sm:text-left text-teal-800">
         Key Features of Our Services
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">

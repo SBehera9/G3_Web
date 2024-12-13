@@ -32,8 +32,8 @@ const services = [
 
 const Services: React.FC = () => {
   return (
-    <section className="text-teal-800 min-h-screen flex flex-col items-center py-6 sm:py-8 md:py-10 px-4 sm:px-6 md:px-8">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-teal-900 mb-6 sm:mb-8 md:mb-10">
+    <section className="text-teal-800 min-h-screen flex flex-col items-center py-2 sm:py-8 md:py-2   px-4 sm:px-6 md:px-8">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-54 sm:mb-6 text-center text-teal-800">
         What do we offer
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 w-full max-w-6xl">

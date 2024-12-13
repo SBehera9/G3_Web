@@ -3,10 +3,10 @@ import React from "react";
 const BusinessGrowthSection: React.FC = () => {
   return (
     <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gray-100 rounded-lg shadow-md">
-      <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-teal-800 mb-6">
+      <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-teal-800">
         Vision
       </h1>
-      <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-teal-800 mb-6">
+      <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-teal-800">
         Driving Business Growth Through Technology and Compliance
       </h2>
       <p className="mb-4 text-sm sm:text-base lg:text-lg">

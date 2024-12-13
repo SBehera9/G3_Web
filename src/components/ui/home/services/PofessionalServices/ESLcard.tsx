@@ -16,11 +16,11 @@ const ESLcard: React.FC<ESLcardProps> = ({ title, description, buttonText, backg
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Overlay text */}
-        <div className="absolute  bg-white flex justify-center items-center text-black p-4">
+        <div className="absolute  bg-white flex justify-center items-center text-teal-800 p-4">
           <div className="text-center">
             <h2 className="text-2xl font-semibold">{title}</h2>
             <p className="mt-2">{description}</p>
-            <button className="mt-6 text-green-600 font-semibold">{buttonText}</button>
+            {/* <button className="mt-6 bg-teal-600 font-semibold">{buttonText}</button> */}
           </div>
         </div>
         

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         Data Privacy Framework Implementation
       </h1>
       <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-10 md:px-16">
-        Protecting Data, Enabling Trust
+      In today’s data-driven world, safeguarding privacy is more than a regulatory requirement it’s a commitment to building trust. Our Data Privacy Framework Implementation services ensure your organization meets global and regional privacy standards, including GDPR, CCPA, DIFC DP Law, and Middle Eastern regulations, with a tailored, end-to-end approach.
       </p>
     </header>
   );
