@@ -1,5 +1,4 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
 
 const services = [
   {
@@ -20,10 +19,24 @@ const services = [
   },
 ];
 
+  const ServiceCard: React.FC<{ title: string; description: string }> = ({ title, description }) => {
+    return (
+      <div className="bg-white rounded-xl p-7 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105">
+        <div className="">
+          <h3 className="text-xl font-bold text-teal-800">{title}</h3>
+        </div>
+        <div className="border-2 rounded-xl p-4 mt-3 hover:bg-teal-100">
+          <p className="mt-2 text-teal-800">{description}</p>
+        </div>
+      </div>
+    );
+  };
+
+
 const ServiceGrid: React.FC = () => {
   return (
     <section className="py-8">
-      <div className="max-w-5xl mx-auto bg-gray-100 p-2">
+      <div className="max-w-5xl mx-auto p-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-3">
           {services.map((service, index) => (
             <ServiceCard key={index} title={service.title} description={service.description} />

@@ -1,22 +1,24 @@
 import React from "react";
 import Header from "./Header";
-import ServiceCard from "./ServiceCard";
 import Footer from "../../../../Footer";
-
+import PrivacySolutions from "./PrivacySolutions";
+import ContactForm from "../../contactus/Form/ContactForm";
 
 const DataPrivacyFramework: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header/>
-      <main className="flex-1 px-32 p-6 bg-white">
-        <div className="container mx-auto">
-          <h2 className="text-2xl font-bold text-center text-teal-800 mb-6 ">
-            Our Services
-          </h2>
-          <ServiceCard />
+      <Header />
+      <PrivacySolutions />
+      {/* Full-width background for the form */}
+      <div className="w-full bg-black">
+        <div className="flex flex-col sm:flex-row px-6 sm:px-16 lg:px-32 py-6">
+          <div className="flex-1 mb-6 sm:mb-0">
+            <h2 className="text-3xl font-bold text-white">Get in touch</h2>
+          </div>
+          <ContactForm bgClassName="bg-transparent" />
         </div>
-      </main>
-      <Footer/>
+      </div>
+      <Footer />
     </div>
   );
 };

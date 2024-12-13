@@ -7,7 +7,7 @@ const services = [
   },
   {
     title: "Gap Assessments",
-    description: "Identify discrepancies between your current practices and industry standards or regulatory expectations. Our detailed gap analysis highlights areas for improvement to ensure full complance and operational efficiency.",
+    description: "Identify discrepancies between your current practices and industry standards or regulatory expectations. Our detailed gap analysis highlights areas for improvement to ensure full compliance and operational efficiency.",
   },
   {
     title: "Privacy Risk Assessments",
@@ -15,18 +15,21 @@ const services = [
   },
   {
     title: "Product Assessments",
-    description: "Ensure your products are privacy-compliant by design. From development to deployment, We assess privacy impacts and offer recommendations to integrate data protection into your product lifecycle.",
+    description: "Ensure your products are privacy-compliant by design. From development to deployment, we assess privacy impacts and offer recommendations to integrate data protection into your product lifecycle.",
   },
 ];
 
 const ServiceCards: React.FC = () => {
   return (
     <div className="bg-white py-8 mt-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {services.map((service, index) => (
-          <div key={index} className="p-8 justify-center items-center border rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <h3 className="text-teal-800 text-2xl font-semibold mb-4">{service.title}</h3>
-            <p className="text-teal-800">{service.description}</p>
+          <div
+            key={index}
+            className="p-8 justify-center items-center border rounded-lg shadow-sm hover:shadow-md transition-shadow"
+          >
+            <h3 className="text-teal-800 text-xl sm:text-2xl font-semibold mb-4">{service.title}</h3>
+            <p className="text-teal-800 text-base sm:text-lg">{service.description}</p>
           </div>
         ))}
       </div>

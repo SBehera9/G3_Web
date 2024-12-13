@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../../../../assets/Image/Gif2.gif";
+import Img from "../../../../assets/Image/img2.jpg";
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,9 +13,12 @@ const HeroSection: React.FC = () => {
         <p className="text-lg md:text-xl mb-6 mt-24 animate-slidein">
           Book your free consultation today!
         </p>
-        {/* <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded shadow">
-          Get Started
-        </button> */}
+        <button
+              type="button"
+              onClick={() => window.open('', '_blank')}
+              className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 focus:outline-none focus:ring focus:ring-teal-300 mt-2">
+              Book now
+            </button>
       </div>
     </div>
   );

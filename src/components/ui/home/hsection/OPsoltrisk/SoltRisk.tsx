@@ -25,27 +25,44 @@ const SoltRisk: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-white mt-24">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
       <main className="flex-1">
         <ProductHighlight />
         <section className="py-10 bg-white">
-          <div className="container mx-auto px-6">
-            <h2 className="text-teal-800 font-bold text-2xl text-center mb-8">Core Features</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {features.map((feature, index) => (
-                <FeatureCard
-                  key={index}
-                  icon={feature.icon}
-                  title={feature.title}
-                  description={feature.description}
-                />
-              ))}
-            </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-teal-800 font-bold text-xl sm:text-2xl lg:text-3xl text-center mb-6 lg:mb-8">
+            Core Features
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
+            {features.map((feature, index) => (
+              <FeatureCard
+                key={index}
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
+            ))}
           </div>
-        </section>
+          <div className="flex justify-center items-center mt-8 sm:mt-10">
+            <button
+              type="button"
+              onClick={() =>
+                window.open(
+                  'https://soltrisk-io-e6evgfagahejbwgh.centralindia-01.azurewebsites.net/',
+                  '_blank'
+                )
+              }
+              className="bg-teal-600 text-white text-sm sm:text-base px-4 sm:px-6 py-2 rounded-lg hover:bg-teal-700 focus:outline-none focus:ring focus:ring-teal-300 mt-4"
+            >
+              Visit Our Website
+            </button>
+          </div>
+        </div>
+      </section>
+
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

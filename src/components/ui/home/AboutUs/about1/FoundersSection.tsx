@@ -17,20 +17,27 @@ const founders = [
 
 const FoundersSection: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-12 space-y-12">
-      <h2 className="text-2xl font-bold text-teal-800">About the Founders</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <h2 className="text-3xl sm:text-4xl md:text-4xl text-center font-bold mb-54 sm:mb-6 text-teal-800">
+        About the Founders
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
         {founders.map((founder, index) => (
-          <div key={index} className="flex-1 bg-white shadow-md p-6 rounded-lg">
+          <div
+            key={index}
+            className="flex flex-col items-center bg-white shadow-lg p-6 rounded-lg transition-transform transform hover:scale-105"
+          >
             <img
               src={founder.image}
               alt={founder.name}
-              className="w-24 h-24 mx-auto rounded-full mb-4"
+              className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto rounded-full mb-4"
             />
-            <h3 className="text-xl font-semibold text-teal-800 text-center mb-2">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-teal-800  mb-2">
               {founder.name}
             </h3>
-            <p className="text-sm">{founder.description}</p>
+            <p className="text-sm sm:text-base lg:text-lg  text-gray-700">
+              {founder.description}
+            </p>
           </div>
         ))}
       </div>
